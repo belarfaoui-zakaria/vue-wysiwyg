@@ -56,7 +56,9 @@ export default {
 			else if (this.module.customAction !== undefined) {
 				this.module.customAction(bus.utils).forEach(a => this.exec.apply(null, a));
 			}
-
+			else if (this.module.customAction2 !== undefined) {
+				this.module.customAction2(this.exec)
+			}
 			else if (
 				this.module.render !== undefined &&
 				(!this.$refs.dashboard || !this.$refs.dashboard.contains($event.target))

@@ -1,7 +1,7 @@
 <template>
     <div>
         <button v-for="k in fonts " :key="k.size" :data-value="k.size" style="margin-right:2px;display: inline-block;font-size:10px;width: 32px; height: 24px; line-height: 1.2; border-radius: 0.25rem;border: 1px solid transparent;text-align: center; white-space: nowrap; vertical-align: middle; user-select:  none;"    @click="insertHeading">
-          {{k.pixels}} {{title}}
+          {{k.pixels}}
         </button>
     </div>
 </template>
@@ -21,7 +21,7 @@ export default {
           {size: 2, pixels: '14px'},
           {size: 3, pixels: '16px'},
           {size: 4, pixels: '20px'},
-          {size: 5, pixels: '24px'}, 
+          {size: 5, pixels: '24px'},
           {size: 6, pixels: '30px'},
           {size: 7, pixels: '36px'}
         ]
